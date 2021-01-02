@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 34px 0px 24px 0px;
+  align-items: center;
+  background-color: $bgc-footer;
+
+  @media screen and(min-width: $tablet-breakpoint) {
+    flex-direction: row;
+  }
+}
+
+.copirite {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.copirite-span-icon {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid $border-color;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.copirite-icon {
+  margin-right: 10px;
+}
+
+.copirite-span {
+  @media screen and(min-width: $tablet-breakpoint) {
+    border-right: 1px solid $border-color;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+}
+
+.copirite-span-dev {
+  display: flex;
+  align-items: center;
+}
+.hearth-favorite {
+  margin-right: 10px;
+  margin-left: 10px;
+}

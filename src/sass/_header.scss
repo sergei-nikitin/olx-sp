@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $border-color;
+}
+
+.menu-btn {
+  height: 70px;
+  width: 70px;
+  border-right: 1px solid $border-color;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  background: $main-body-color;
+}
+.menu-btn:hover,
+.close-btn:hover,
+.searc-btn:hover {
+  fill: $orange-color;
+  &:focus {
+    fill: $orange-color;
+  }
+}
+
+.navigation {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 829px;
+
+  background: $main-body-color;
+  overflow-y: scroll;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.item-nav {
+  width: 100%;
+  padding: 27px 24px 26px 34px;
+  border-bottom: 1px solid $border-color;
+
+  &:hover {
+    color: $orange-color;
+    fill: $orange-color;
+  }
+  &:focus {
+    color: $orange-color;
+    fill: $orange-color;
+  }
+}
+
+.item-nav.li-user {
+  display: flex;
+  align-items: center;
+}
+
+.is-open {
+  display: block;
+}
+
+.span-my-office {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+// .backdrop-menu {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 829px;
+//   background-color: $backdrop-color;
+//   opacity: 1;
+//   transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .backdrop-menu.is-hiden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+.item-nav.li-user.sub-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
