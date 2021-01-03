@@ -1,3 +1,4 @@
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const { merge } = require('webpack-merge');
 const loadSharedConfig = require('./configs/shared');
 

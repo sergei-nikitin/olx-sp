@@ -6,8 +6,14 @@
   align-items: center;
   background-color: $bgc-footer;
 
-  @media screen and(min-width: $tablet-breakpoint) {
+  @media screen and (min-width: $tablet-breakpoint) {
     flex-direction: row;
+    width: $tablet-breakpoint;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and(min-width: $desktop-breakpoint) {
+    width: $desktop-breakpoint;
   }
 }
 

@@ -1,70 +1,138 @@
 <header class="header">
-    <button class="menu-btn" type="button" data-menu-button aria-expanded="false">
-        <svg class="icom-burger-menu" width="20" height="20" aria-label="мобильное меню">
-            <use href="./images/sprite.svg#icon-burger-menu"></use>
-        </svg>
+  <div class="primary-header-div">
+    <button
+      class="menu-btn"
+      type="button"
+      data-menu-button
+      aria-expanded="false"
+    >
+      <svg
+        class="icom-burger-menu"
+        width="20"
+        height="20"
+        aria-label="мобильное меню"
+      >
+        <use href="./images/sprite.svg#icon-burger-menu"></use>
+      </svg>
     </button>
 
+    <div class="backdrop is-hiden" data-backdrop>
+      <ul class="navigation">
+        <li class="item-nav li-dn-for-desktop">
+          <button class="close-btn" type="button" data-close-menu-button>
+            <svg class="icon-close" width="14" height="14">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </li>
 
-    <!-- <div class="backdrop-menu is-hiden"> -->
-    <nav class="navigation">
-        <ul>
-            <li class="item-nav">
-                <button class="close-btn" type="button" data-close-menu-button>
-                    <svg class="icon-close" width="14" height="14">
-                        <use href="./images/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
+        <li class="item-nav li-dn-for-desktop li-user">
+          <span class="item-nav-span">
+            <svg class="icon-user" width="20" height="20">
+              <use href="./images/sprite.svg#icon-user"></use>
+            </svg>
+            <span class="span-my-office">Реєстрація / Увійти</span>
+          </span>
+        </li>
+
+        <li class="item-nav li-dn-for-desktop li-user sub-menu">
+          <div class="kabinet">
+            <span class="item-nav-span">
+              <svg class="icon-user" width="20" height="20">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+              <span class="span-my-office">Мій кабінет</span>
+            </span>
+
+            <button type="button" class="logout-btn">
+              <svg class="icon-logout" width="20" height="20">
+                <use href="./images/sprite.svg#icon-logout"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="sub-menu-list">
+            <li class="sub-menu-item">
+              <span class="item-nav-span">Мої оголошення</span>
             </li>
-            <li class="item-nav li-user">
-                <svg class="icon-user" width="20" height="20">
-                    <use href="./images/sprite.svg#icon-user"></use>
-                </svg>
-                <span class="span-my-office">Реєстрація / Увійти</span>
+            <li class="sub-menu-item">
+              <span class="item-nav-span">Обране</span>
             </li>
+          </ul>
+        </li>
 
+        <li class="item-nav">
+          <span class="item-nav-span">Нерухомість</span>
+        </li>
+        <li class="item-nav"><span class="item-nav-span">Транспорт</span></li>
+        <li class="item-nav"><span class="item-nav-span">Робота</span></li>
+        <li class="item-nav">
+          <span class="item-nav-span">Електроніка</span>
+        </li>
+        <li class="item-nav">
+          <span class="item-nav-span">Бізнес та послуги</span>
+        </li>
+        <li class="item-nav">
+          <span class="item-nav-span">Відпочинок і спорт</span>
+        </li>
+        <li class="item-nav">
+          <span class="item-nav-span">Віддам безкоштовно</span>
+        </li>
+        <li class="item-nav"><span class="item-nav-span">Обмін</span></li>
+      </ul>
+    </div>
+    <div class="clear-filter-div">
+      <button class="clear-btn" type="button">
+        <svg class="clear-icon" width="20" height="20">
+          <use href="./images/sprite.svg#icon-clear"></use>
+        </svg>
+        <span>Очистити фільтри</span>
+      </button>
+    </div>
+  </div>
 
-            <li class="item-nav li-user sub-menu">
-                <div class="kabinet">
-                    <svg class="icon-user" width="20" height="20">
-                        <use href="./images/sprite.svg#icon-user"></use>
-                    </svg>
-                    <span class="span-my-office">Мій кабінет</span>
-                    <svg width="20" height="20">
-                        <use href="./images/sprite.svg#icon-logout"></use>
-                    </svg>
-                </div>
-                <ul class="sub-menu-list">
-                    <li class="sub-menu-item">Мої оголошення</li>
-                    <li class="sub-menu-item">Обране</li>
-                </ul>
-            </li>
-
-
-
-            <li class="item-nav">Нерухомість</li>
-            <li class="item-nav">Транспорт</li>
-            <li class="item-nav">Робота</li>
-            <li class="item-nav">Електроніка</li>
-            <li class="item-nav">Бізнес та послуги</li>
-            <li class="item-nav">Відпочинок і спорт</li>
-            <li class="item-nav">Віддам безкоштовно</li>
-            <li class="item-nav">Віддам безкоштовно</li>
-            <li class="item-nav">Обмін</li>
-        </ul>
-    </nav>
-    <!-- </div> -->
+  <div class="secondary-header-div">
+    <button class="search-btn-tablet" type="button">
+      <svg class="search-icon" width="18" height="18">
+        <use href="./images/sprite.svg#icon-search"></use>
+      </svg>
+    </button>
 
     <div class="logo">
-        <svg class="icon-logo" width="50" height="20">
-            <use href="./images/sprite.svg#icon-logo"></use>
-        </svg>
+      <svg class="icon-logo" width="50" height="20">
+        <use href="./images/sprite.svg#icon-logo"></use>
+      </svg>
     </div>
 
-    <button class="searc-btn" type="button">
-        <svg class="search-icon" width="18" height="18">
-            <use href="./images/sprite.svg#icon-search"></use>
-        </svg>
-    </button>
+    <div class="desk-div-mix">
+      <div class="div-user-tablet">
+        <button class="btn-user-tablet" type="button">
+          <svg class="icon-user-tablet" width="20" height="20">
+            <use href="./images/sprite.svg#icon-user"></use>
+          </svg>
+          <span class="span-user-tablet">Мій кабінет</span>
+        </button>
+      </div>
 
+      <div class="logout-desktop">
+        <buttom class="logout-desk-btn" type="button">
+          <svg class="icon-logout-desk" width="20" height="20">
+            <use href="./images/sprite.svg#icon-logout"></use>
+          </svg>
+        </buttom>
+      </div>
+
+      <button class="search-btn-mobile" type="button">
+        <svg class="search-icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+
+      <div class="add-dvert">
+        <button type="button" class="add-advert-btn">
+          Створити оголошення!
+        </button>
+      </div>
+    </div>
+  </div>
 </header>

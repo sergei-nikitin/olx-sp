@@ -12,6 +12,13 @@ module.exports = env => ({
   },
   module: {
     rules: [
+      // {
+      //   test: /\.scss$/,
+      //   use: ExtractTextPlugin.extract({
+      //     fallback: 'style-loader',
+      //     use: ['css-loader', 'sass-loader'],
+      //   }),
+      // },
       {
         test: /\.js$/,
         include: paths.SRC_DIR,
@@ -73,6 +80,7 @@ module.exports = env => ({
     ],
   },
   plugins: [
+    // new ExtractTextPlugin('styles.css'),
     new CleanWebpackPlugin(),
     new FriendlyErrorsWebpackPlugin(),
     new WebpackBar(),
