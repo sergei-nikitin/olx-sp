@@ -12,6 +12,9 @@ body {
   margin: 0;
   background-color: lightcyan;
   color: black;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -38,5 +41,5 @@ li {
 
 button {
   border: none;
-  background-color: $main-bg-color;
+  background-color: transparent;
 }

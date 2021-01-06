@@ -1,0 +1,301 @@
+// body.modal-open .backdrop {
+//   opacity: 1;
+//   visibility: visible;
+//   pointer-events: initial;
+// }
+
+// body.modal-open .modal {
+//   transform: scale(1);
+// }
+
+.modal-search {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 290px;
+  height: 152px;
+  background-color: $orange-color;
+  border-radius: 5px;
+
+  @media screen and(min-width: $tablet-breakpoint) {
+    width: 650px;
+    height: 230px;
+  }
+  @media screen and(min-width: $desktop-breakpoint) {
+    width: 860px;
+    height: 230px;
+  }
+  &.is-open {
+    display: block;
+  }
+}
+
+.close-modal-search-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.icon-close-modal-search {
+  margin: 4.45px;
+  fill: #ffffff;
+  &:hover {
+    fill: black;
+    cursor: pointer;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.input-modal-search {
+  width: 250px;
+  height: 45px;
+  padding-left: 10px;
+  margin-top: 50px;
+  margin-left: 20px;
+
+  font-size: large;
+  font-weight: 900;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+
+  @media screen and(min-width: $tablet-breakpoint) {
+    margin-top: 90px;
+    width: 550px;
+    margin-left: 50px;
+  }
+  @media screen and(min-width: $desktop-breakpoint) {
+    margin-top: 95px;
+    width: 650px;
+    margin-left: 105px;
+  }
+}
+
+.btn-search-modal-search {
+  position: absolute;
+  right: 20px;
+  top: 63px;
+
+  background-color: transparent;
+  fill: #ffffff;
+
+  &:hover {
+    fill: black;
+  }
+  @media screen and(min-width: $tablet-breakpoint) {
+    right: 90px;
+    top: 100px;
+  }
+  @media screen and(min-width: $desktop-breakpoint) {
+    right: 130px;
+    top: 105px;
+  }
+}
+
+.tex-for-bad-status {
+  margin-left: 20px;
+  @media screen and(min-width: $tablet-breakpoint) {
+    margin-left: 50px;
+  }
+  @media screen and(min-width: $desktop-breakpoint) {
+    margin-left: 105px;
+  }
+}
+
+// .modal-search {
+//   position: relative;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+
+//   background-color: #ff6b09;
+//   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+//     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+//   @media screen and (min-width: $mobile-breakpoint) {
+//     width: 290px;
+//     height: 152px;
+
+//     padding: 49px 20px 60px 18.5px;
+//   }
+
+//   @media screen and (min-width: $tablet-breakpoint) {
+//     width: 650px;
+//     height: 230px;
+
+//     padding: 94px 50px 94px 50px;
+//   }
+
+//   @media screen and (min-width: $desktop-breakpoint) {
+//     width: 860px;
+//     padding: 105px 94px;
+//   }
+// }
+
+// .search-input {
+//   width: 100%;
+//   padding: 10px 20px;
+
+//   background-color: #ff6b09;
+
+//   border: none;
+//   border-bottom: 1px solid #000000;
+//   outline: none;
+
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: 300;
+//   font-size: 28px;
+//   line-height: 33px;
+//   letter-spacing: 1.17;
+//   text-transform: uppercase;
+
+//   color: #ffffff;
+
+//   @media screen and (min-width: $mobile-breakpoint) {
+//     padding: 7px 6px;
+//   }
+//   @media screen and (min-width: $tablet-breakpoint) {
+//     padding: 7px 20px;
+//   }
+// }
+
+// .search-input::placeholder {
+//   text-transform: uppercase;
+//   margin-right: 3px;
+
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 18px;
+//   line-height: 21px;
+//   letter-spacing: 1.16;
+//   text-transform: uppercase;
+
+//   color: #ffffff;
+
+//   opacity: 0.5;
+// }
+
+// .button-close {
+//   position: absolute;
+//   top: 15px;
+//   right: 15px;
+
+//   display: flex;
+//   background-color: $orange-color;
+
+//   //   @media screen and (min-width: $mobile-breakpoint) {
+//   //     top: 0px;
+//   //     right: 0px;
+//   //   }
+//   //   @media screen and (min-width: $tablet-breakpoint) {
+//   //     top: -9px;
+//   //     right: -12px;
+//   //   }
+//   //   @media screen and (min-width: $desktop-breakpoint) {
+//   //     top: -5px;
+//   //     right: -5px;
+//   //   }
+// }
+// .button-close :hover {
+//   fill: black;
+// }
+
+// .icon-close {
+//   display: inline-block;
+//   margin: auto;
+
+//   width: 24px;
+//   height: 24px;
+//   fill: #ffffff;
+// }
+
+// .button-magnifire {
+//   width: 1px;
+//   height: 1px;
+// }
+// .icon-modal-search-magnifer {
+//   fill: #ffffff;
+//   position: absolute;
+//   @media screen and (min-width: $mobile-breakpoint) {
+//     right: 35px;
+//     top: 66px;
+//   }
+//   @media screen and (min-width: $tablet-breakpoint) {
+//     right: 70px;
+//     top: 110px;
+//   }
+//   @media screen and (min-width: $desktop-breakpoint) {
+//     right: 115px;
+//     top: 118px;
+//   }
+// }
+// .icon-modal-search-magnifer:hover {
+//   fill: black;
+// }
+
+// .cards-group-search {
+//   margin-top: 30px;
+// }
+// .card-template-search {
+//   background-color: #fff;
+//   box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.1));
+//   width: 290px;
+//   height: 350px;
+//   margin-bottom: 30px;
+
+//   @media screen and (min-width: $tablet-breakpoint) {
+//     width: calc((100% - 4 * 10px) / 2);
+//     margin-right: 20px;
+//     margin-bottom: 55px;
+//   }
+//   @media screen and (min-width: $desktop-breakpoint) {
+//     width: calc((100% - 8 * 10px) / 4);
+//   }
+// }
+// .photo-card__image {
+//   display: block;
+//   width: 100%;
+//   height: 275px;
+//   object-fit: cover;
+//   cursor: pointer;
+// }
+
+// .overlay-button-follscreen {
+//   display: flex;
+//   width: 50px;
+//   height: 50px;
+//   // background-image: url('../images/sprite.svg#icon-fullscreen');
+//   content: '';
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+
+// .overlay-icon-follscreen {
+//   display: block;
+//   content: '';
+//   height: 50px;
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+// .icon-img {
+//   background-size: contain;
+// }
+// .contane-svg {
+//   background-size: contain;
+//   z-index: 1000;
+//   position: relative;
+//   width: 16px;
+//   height: 16px;
+// }
