@@ -1,57 +1,48 @@
 import { getOneCategory } from './api';
 import card from '../templates/card.hbs';
-import { onCloseModal } from './openModalSearch';
+import { onCloseModalSearch } from './openModalSearch';
 
 // import Handlebars from 'handlebars';
 // assumes you have handlebars installed as a project dependency
 // productCard.registerHelper('inlineSVG', productCard);
 
 const mainContainer = document.querySelector('.main-container');
-const magnifireSearchModal = document.querySelector('.button-magnifire');
-const textForBadStatus = document.querySelector('.text-for-status-no-ok');
+const searchModalButton = document.querySelector('[data-search-modal-buuton]');
+const textForBadStatus = document.querySelector('.tex-for-bad-status');
+const inputSearchModal = document.querySelector('.input-modal-search');
 
-magnifireSearchModal.addEventListener('click', fetchCategory);
-magnifireSearchModal.addEventListener('submit', fetchCategory);
+searchModalButton.addEventListener('click', fetchCategory);
+inputSearchModal.addEventListener('submit', fetchCategory);
+inputSearchModal.addEventListener('keyup', function (event) {
+  if (event.code === 'Enter') {
+    console.log('enter');
+    return fetchCategory();
+  }
+});
 
 function renderProductCard(data) {
-  // mainContainer.insertAdjacentHTML('afterbegin', inlineSVG(data))
-  mainContainer.insertAdjacentHTML('afterbegin', productCard(data));
+  mainContainer.insertAdjacentHTML('afterbegin', card(data));
 }
 function clearMainConteiner() {
   mainContainer.innerHTML = '';
 }
 
-// function fetchCategory(e) {
-//     e.preventDefault();
-//     const query = document.querySelector('.search-input').value;
-//     getPageSearchQuerySpecific(query)
-//         .then(({ data }) => {
-//             if (data.length > 0) {
-//                 clearMainConteiner(),
-//               renderProductCard(data),
-//               onCloseModal(),
-//               document.querySelector('.search-input').value = '',
-//               textForBadStatus.textContent = ''
-//             }
-//         })
-//     .catch (err => textForBadStatus.textContent = 'status 404')
-// }
-
-function fetchCategory(e) {
-  e.preventDefault();
-  const query = document.querySelector('.search-input').value;
+function fetchCategory(event) {
+  event.preventDefault();
+  const query = inputSearchModal.value;
   if (
     query === 'Нерухомість' ||
     query === 'недвижимость' ||
     query === 'property'
   ) {
-    getPageSearchQuerySpecific('property').then(({ data }) => {
+    // getOneCategory('property').then(({ data }) => {
+    getOneCategory('property').then(data => {
       if (data.length > 0) {
         clearMainConteiner(),
           renderProductCard(data),
-          onCloseModal(),
-          (document.querySelector('.search-input').value = ''),
-          (textForBadStatus.textContent = '');
+          onCloseModalSearch(),
+          (inputSearchModal.value = ''),
+          (textForBadStatus.textContent = ' ');
       }
     });
   } else if (
@@ -59,23 +50,23 @@ function fetchCategory(e) {
     query === 'транспорт' ||
     query === 'transport'
   ) {
-    getPageSearchQuerySpecific('transport').then(({ data }) => {
+    getOneCategory('transport').then(data => {
       if (data.length > 0) {
         clearMainConteiner(),
           renderProductCard(data),
-          onCloseModal(),
-          (document.querySelector('.search-input').value = ''),
-          (textForBadStatus.textContent = '');
+          onCloseModalSearch(),
+          (inputSearchModal.value = ''),
+          (textForBadStatus.textContent = ' ');
       }
     });
   } else if (query === 'Робота' || query === 'работа' || query === 'work') {
-    getPageSearchQuerySpecific('work').then(({ data }) => {
+    getOneCategory('work').then(data => {
       if (data.length > 0) {
         clearMainConteiner(),
           renderProductCard(data),
-          onCloseModal(),
-          (document.querySelector('.search-input').value = ''),
-          (textForBadStatus.textContent = '');
+          onCloseModalSearch(),
+          (inputSearchModal.value = ''),
+          (textForBadStatus.textContent = ' ');
       }
     });
   } else if (
@@ -83,13 +74,13 @@ function fetchCategory(e) {
     query === 'электрика' ||
     query === 'electronics'
   ) {
-    getPageSearchQuerySpecific('electronics').then(({ data }) => {
+    getOneCategory('electronics').then(data => {
       if (data.length > 0) {
         clearMainConteiner(),
           renderProductCard(data),
-          onCloseModal(),
-          (document.querySelector('.search-input').value = ''),
-          (textForBadStatus.textContent = '');
+          onCloseModalSearch(),
+          (inputSearchModal.value = ''),
+          (textForBadStatus.textContent = ' ');
       }
     });
   } else if (
@@ -97,13 +88,13 @@ function fetchCategory(e) {
     query === 'бизнес и услуги' ||
     query === 'business and services'
   ) {
-    getPageSearchQuerySpecific('business and services').then(({ data }) => {
+    getOneCategory('business and services').then(data => {
       if (data.length > 0) {
         clearMainConteiner(),
           renderProductCard(data),
-          onCloseModal(),
-          (document.querySelector('.search-input').value = ''),
-          (textForBadStatus.textContent = '');
+          onCloseModalSearch(),
+          (inputSearchModal.value = ''),
+          (textForBadStatus.textContent = ' ');
       }
     });
   } else if (
@@ -111,13 +102,13 @@ function fetchCategory(e) {
     query === 'отдых и спорт' ||
     query === 'recreation and sport'
   ) {
-    getPageSearchQuerySpecific('recreation and sport').then(({ data }) => {
+    getOneCategory('recreation and sport').then(data => {
       if (data.length > 0) {
         clearMainConteiner(),
           renderProductCard(data),
-          onCloseModal(),
-          (document.querySelector('.search-input').value = ''),
-          (textForBadStatus.textContent = '');
+          onCloseModalSearch(),
+          (inputSearchModal.value = ''),
+          (textForBadStatus.textContent = ' ');
       }
     });
   } else if (
@@ -125,23 +116,23 @@ function fetchCategory(e) {
     query === 'отдам даром' ||
     query === 'free'
   ) {
-    getPageSearchQuerySpecific('free').then(({ data }) => {
+    getOneCategory('free').then(data => {
       if (data.length > 0) {
         clearMainConteiner(),
           renderProductCard(data),
-          onCloseModal(),
-          (document.querySelector('.search-input').value = ''),
-          (textForBadStatus.textContent = '');
+          onCloseModalSearch(),
+          (inputSearchModal.value = ''),
+          (textForBadStatus.textContent = ' ');
       }
     });
   } else if (query === 'Обмін' || query === 'обмен' || query === 'trade') {
-    getPageSearchQuerySpecific('trade').then(({ data }) => {
+    getOneCategory('trade').then(data => {
       if (data.length > 0) {
         clearMainConteiner(),
           renderProductCard(data),
-          onCloseModal(),
-          (document.querySelector('.search-input').value = ''),
-          (textForBadStatus.textContent = '');
+          onCloseModalSearch(),
+          (inputSearchModal.value = ''),
+          (textForBadStatus.textContent = ' ');
       }
     });
   }

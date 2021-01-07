@@ -1,0 +1,80 @@
+.cards-group-search {
+  display: block;
+  @media screen and(min-width: $tablet-breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card-template-search {
+  width: 290px;
+  height: 350px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+
+  @media screen and(min-width: $tablet-breakpoint) {
+    width: calc((100% - 4 * 10px) / 2);
+    margin-right: 20px;
+    margin-bottom: 55px;
+  }
+  @media screen and(min-width: $desktop-breakpoint) {
+    width: calc((100% - 8 * 10px) / 4);
+  }
+
+  &:hover {
+    box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.3));
+  }
+}
+
+.photo-card__image {
+  height: 275px;
+  width: 100%;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content-price {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-overlay {
+  display: none;
+}
+
+.product-name,
+.product-price,
+.product-presale-price {
+  margin: 0;
+}
+
+.product-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.16;
+
+  color: black;
+}
+
+.product-price,
+.product-presale-price {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.14;
+
+  color: #bbbbbb;
+}
+.product-presale-price {
+  margin-left: 10px;
+  color: $orange-color;
+}

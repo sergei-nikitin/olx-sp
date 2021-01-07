@@ -1,0 +1,16 @@
+.main-container {
+  width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 25px 15px;
+  background-color: $main-bg-color;
+  @media screen and(min-width: $tablet-breakpoint) {
+    width: $tablet-breakpoint;
+    padding: 16px 22px;
+  }
+  @media screen and(min-width: $desktop-breakpoint) {
+    width: $desktop-breakpoint;
+    padding: 10px 20px;
+  }
+}
