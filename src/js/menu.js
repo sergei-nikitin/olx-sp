@@ -1,18 +1,7 @@
-// import {
-//   onOpenModal,
-//   onEscKeyPress,
-//   onCloseModal,
-//   onBackdropClick,
-// } from './modalFunctions';
-
 const openMenuBtn = document.querySelector('[data-menu-button]');
 const closeMenuBtn = document.querySelector('[data-close-menu-button]');
 const navigation = document.querySelector('.navigation');
 const backdrop = document.querySelector('[data-backdrop]');
-
-// openMenuBtn.addEventListener('click', onOpenModal);
-// closeMenuBtn.addEventListener('click', onCloseModal);
-// backdrop.addEventListener('click', onBackdropClick);
 
 openMenuBtn.addEventListener('click', onOpenMobileMenu);
 closeMenuBtn.addEventListener('click', onCloseMobileMenu);

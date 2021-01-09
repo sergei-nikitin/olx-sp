@@ -38,20 +38,29 @@
   top: 15px;
   right: 15px;
 
+  display: flex;
+  align-items: center;
+
   width: 24px;
   height: 24px;
   border-radius: 50%;
-}
-.icon-close-modal-search {
-  margin: 4.45px;
-  fill: #ffffff;
-  &:hover {
-    fill: black;
-    cursor: pointer;
 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  fill: #ffffff;
+
+  &:hover {
+    cursor: pointer;
+    fill: #000;
   }
 }
+// .icon-close-modal-search {
+//   fill: #ffffff;
+//   &:hover {
+//     fill: black;
+//     cursor: pointer;
+
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+//   }
+// }
 
 .input-modal-search {
   width: 250px;
