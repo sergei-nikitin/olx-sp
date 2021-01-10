@@ -2,10 +2,6 @@ import { getOneCategory } from './api';
 import card from '../templates/card.hbs';
 import { onCloseModalSearch } from './openModalSearch';
 
-// import Handlebars from 'handlebars';
-// assumes you have handlebars installed as a project dependency
-// productCard.registerHelper('inlineSVG', productCard);
-
 const mainContainer = document.querySelector('.main-container');
 const searchModalButton = document.querySelector('[data-search-modal-buuton]');
 const textForBadStatus = document.querySelector('.tex-for-bad-status');

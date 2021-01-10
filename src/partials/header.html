@@ -62,42 +62,36 @@
           </ul>
         </li>
 
-        <li class="item-nav">
-          <span class="item-nav-span">Нерухомість</span>
-        </li>
-        <li class="item-nav"><span class="item-nav-span">Транспорт</span></li>
-        <li class="item-nav"><span class="item-nav-span">Робота</span></li>
-        <li class="item-nav">
-          <span class="item-nav-span">Електроніка</span>
-        </li>
-        <li class="item-nav">
-          <span class="item-nav-span">Бізнес та послуги</span>
-        </li>
-        <li class="item-nav">
-          <span class="item-nav-span">Відпочинок і спорт</span>
-        </li>
-        <li class="item-nav">
-          <span class="item-nav-span">Віддам безкоштовно</span>
-        </li>
-        <li class="item-nav"><span class="item-nav-span">Обмін</span></li>
+        <li class="item-nav" data-property>Нерухомість</li>
+        <li class="item-nav" data-transport>Транспорт</li>
+        <li class="item-nav" data-work>Робота</li>
+        <li class="item-nav" data-electronics>Електроніка</li>
+        <li class="item-nav" data-business-and-services>Бізнес та послуги</li>
+        <li class="item-nav" data-recreation-and-sport>Відпочинок і спорт</li>
+        <li class="item-nav" data-free>Віддам безкоштовно</li>
+        <li class="item-nav" data-trade>Обмін</li>
       </ul>
     </div>
 
     <div class="navigation-desktop">
       <ul class="nav-desktop-list">
-        <li class="nav-desktop-item">Нерухомість</li>
-        <li class="nav-desktop-item">Транспорт</li>
-        <li class="nav-desktop-item">Робота</li>
-        <li class="nav-desktop-item">Електроніка</li>
-        <li class="nav-desktop-item">Бізнес та послуги</li>
-        <li class="nav-desktop-item">Відпочинок і спорт</li>
-        <li class="nav-desktop-item">Віддам безкоштовно</li>
-        <li class="nav-desktop-item">Обмін</li>
+        <li class="nav-desktop-item" data-property>Нерухомість</li>
+        <li class="nav-desktop-item transport" data-transport>Транспорт</li>
+        <li class="nav-desktop-item" data-work>Робота</li>
+        <li class="nav-desktop-item" data-electronics>Електроніка</li>
+        <li class="nav-desktop-item" data-business-and-services>
+          Бізнес та послуги
+        </li>
+        <li class="nav-desktop-item" data-recreation-and-sport>
+          Відпочинок і спорт
+        </li>
+        <li class="nav-desktop-item" data-free>Віддам безкоштовно</li>
+        <li class="nav-desktop-item" data-trade>Обмін</li>
       </ul>
     </div>
 
     <div class="clear-filter-div">
-      <button class="clear-btn" type="button">
+      <button class="clear-btn" type="button" data-clean>
         <svg class="clear-icon" width="20" height="20">
           <use href="./images/sprite.svg#icon-clear"></use>
         </svg>
@@ -149,7 +143,7 @@
       </button>
 
       <div class="add-dvert">
-        <button type="button" class="add-advert-btn">
+        <button type="button" class="add-advert-btn" data-open-modal-add>
           Створити оголошення!
         </button>
       </div>

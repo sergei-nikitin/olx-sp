@@ -7,3 +7,5 @@ import './js/openModalSearch';
 import './js/modalSearch';
 import './js/openModalAuth';
 import './js/openModalLogout';
+import './js/openmodalAdd';
+import './js/nav';

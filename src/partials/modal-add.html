@@ -1,0 +1,108 @@
+<div class="backdrop-add is-hiden">
+  <div class="modal-add is-open">
+    <button type="button" class="close-modal-add-btn">
+      <svg width="14" height="14">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="add-main-text">Додати оголошення</h2>
+    <form class="form-add">
+      <div class="wraper">
+        <p class="add-text">Назва товару</p>
+        <input class="name-product" type="text" />
+      </div>
+
+      <div class="wraper">
+        <p class="add-text">Фото</p>
+
+        <div class="div-add-foto">
+          <div class="div-input-file">
+            <input
+              id="input-file-id"
+              type="file"
+              name="file"
+              class="input input-file"
+              accept="image/*"
+              multiple
+            />
+            <label class="input-buuton" for="input-file-id">
+              <span class="icon-input">
+                <svg class="icon-plus-add" width="14" height="14">
+                  <use href="./images/sprite.svg#icon-plus"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="div-input-file">
+            <input
+              id="input-file-id"
+              type="file"
+              name="file"
+              class="input input-file"
+              accept="image/*"
+              multiple
+            />
+            <label class="input-buuton" for="input-file-id">
+              <span class="icon-input">
+                <svg class="icon-plus-add" width="14" height="14">
+                  <use href="./images/sprite.svg#icon-plus"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+
+          <div class="div-input-file">
+            <input
+              id="input-file-id"
+              type="file"
+              name="file"
+              class="input input-file"
+              accept="image/*"
+              multiple
+            />
+            <label class="input-buuton" for="input-file-id">
+              <span class="icon-input">
+                <svg class="icon-plus-add" width="14" height="14">
+                  <use href="./images/sprite.svg#icon-plus"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="wraper">
+        <p class="add-text">Опис товару</p>
+        <textarea class="textarea"></textarea>
+      </div>
+
+      <div class="wraper">
+        <p class="add-text">Категорія товару</p>
+        <select class="category-list">
+          <option value="property"></option>
+          <option value="property">Нерухомість</option>
+          <option value="transport">Транспорт</option>
+          <option value="work">Робота</option>
+          <option value="electronics">Електроніка</option>
+          <option value="business and services">Бізнес та послуги</option>
+          <option value="recreation and sport">Відпочинок і спорт</option>
+          <option value="free">Віддам безкоштовно</option>
+          <option value="trade">Обмін</option>
+        </select>
+      </div>
+
+      <div class="wraper">
+        <p class="add-text">Ціна</p>
+        <input class="price" type="text" />
+      </div>
+
+      <div class="wraper">
+        <p class="add-text">Телефон</p>
+        <input type="tel" class="phone" placeholder="+38( 0 -- ) -- -- ---" />
+      </div>
+
+      <button class="submit-btn" type="submit">Додати</button>
+    </form>
+  </div>
+</div>
